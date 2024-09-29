@@ -11,3 +11,5 @@ cp -r ../mindwarriorgame.org/build/* .
 
 git add .
 git commit -m "Build"
+
+git push origin main
