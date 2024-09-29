@@ -1,0 +1,17 @@
+
+#review {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+#review h1 {
+    font-size: 1em;
+    font-weight: bold;
+    color: darkorange;
+    margin: 10px;
+    padding: 0;
+}
+
+#review ol {
+    padding-left: 0.5em;
+}
