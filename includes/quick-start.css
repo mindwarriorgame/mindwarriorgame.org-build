@@ -1,0 +1,12 @@
+.qsg-parent .col1 {
+    width: 300px;
+}
+
+.qsg-even {
+    background-color: #f5f5f5;
+}
+
+
+table.qsg-parent th, .content table td {
+    border: none;
+}
