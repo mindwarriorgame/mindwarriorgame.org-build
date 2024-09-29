@@ -4,6 +4,10 @@
     padding: 10px;
 }
 
+#review strong {
+    color: #444;
+}
+
 #review h1 {
     font-size: 1em;
     font-weight: bold;
