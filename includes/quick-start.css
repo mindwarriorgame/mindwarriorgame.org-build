@@ -1,12 +1,44 @@
-.qsg-parent .col1 {
+
+.quickstart-parent {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quickstart-parent a {
+    color: white;
+}
+
+.quickstart-step {
+    background-image: url('/images/quickstart-item-bg.png');
+    background-size:100% 100%;
+    margin: 0px auto;
+    margin-top: -60px;
+    z-index: 199;
+    position:relative;
+    color: white;
     width: 300px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 5px;
 }
 
-.qsg-even {
-    background-color: #f5f5f5;
+.quickstart-step h1 {
+    font-size: 1.1em;
+    padding: 0px;
 }
 
+.quickstart-step p {
+    color: white;
+    font-size: 1em;
+    padding: 0px;
+}
 
-table.qsg-parent th, .content table td {
-    border: none;
+.quickstart-parent .telegram {
+    background-image: url("/images/quickstart-telegram-btn.png");
+    background-size:100% 100%;
+    padding: 30px 0px;
+    width: 300px;
+    margin: 0px auto;
 }
