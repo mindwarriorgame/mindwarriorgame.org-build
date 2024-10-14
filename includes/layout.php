@@ -59,7 +59,7 @@
 <?php
 if (isset($JS)) {
     foreach ($JS as $js) {
-        echo "<script src='$js'></script>";
+        echo "<script src='$js?" . time() . "'></script>";
     }
 }
 ?>
