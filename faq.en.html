@@ -90,7 +90,7 @@
 
     <p>
         Game-wise, when you perform the review without being reminded about that,
-        you will earn game rewards!
+        you will earn game rewards! Please <a href="#difficulty">refer to the table below</a> for the details.
     </p>
 
     <p>
@@ -108,8 +108,8 @@
 
     <p>
         If you forget to review your <i>Formula of firm resolution</i> in time, the game will remind you with a notification.
-        Depending on the difficulty level of the game, you also might be penalised.
-        Please <a href="#difficulty">refer to the next answer</a> for the details about possible penalties.
+        If you ignore it, then (depending on the difficulty level) you might be penalised.
+        Please <a href="#difficulty">refer to the table in the next answer</a> for the details.
     </p>
 
     <p>
@@ -122,7 +122,17 @@
     <h3>How often do I need to review my Formula?</h3>
 
     <p>
-        The frequency of reviews and the penalties for missed reviews are determined by the difficulty level of the game.
+        You can review your <i>Formula</i> as often as you'd like, however only the reviews performed at least
+        5 minutes apart from each other will be rewarded ("cool-down" rule).
+    </p>
+
+    <p>
+        The frequency of reviews and the penalties for missed ones are determined by the difficulty level of the game,
+        which you could change at any time using <span class="code-highlight">/difficulty</span> command.
+    </p>
+
+    <p>
+        If you forget to review your <i>Formula</i>, then (depending on the difficulty level) you might be penalised.
     </p>
 
     <table>
@@ -130,42 +140,77 @@
             <td>Beginner</td>
             <td>
                     ⏰ review once per 6 hours<br/>
-                    😌 no penalty for missed reviews
+                    😻 reward for a review before the reminder: 2 stars<br/>
+                    😺 reward for a review after the reminder: 1 star<br/>
+                    😼 no penalty
             </td>
         </tr>
         <tr>
             <td>Easy</td>
             <td>⏰ review once per 3 hours<br/>
-                    😌 no penalty for the fist missed review<br/>
-                    😿 -3 stars penalty for each consequent missed review
+                😻 reward for a review before the reminder: 2 stars<br/>
+                😺 reward for a review after the reminder: 1 star<br/>
+                😼 penalty for the first miss: no penalty<br/>
+                😿 penalty for every <a href="#next_penalty">consequent(*) miss</a>: -3 stars<br />
             </td>
         </tr>
         <tr>
             <td>Normal</td>
             <td>⏰ review once per 1 hour 30 minutes<br/>
-                    😿 -3 stars penalty for the first missed review<br/>
-                    🙀 -6 stars penalty for each consequent missed review
+                😺 reward for a review before the reminder: 1 star<br/>
+                😺 reward for a review after the reminder: 1 star<br/>
+                😿 penalty for the first miss: -3 stars<br/>
+                🙀 penalty for every <a href="#next_penalty">consequent(*) miss</a>: -6 stars<br />
             </td>
         </tr>
         <tr>
             <td>Hard</td>
-            <td>⏰ review once per 1 hour<br/>
-                    😿 -3 stars penalty for the first missed review<br/>
-                    🙀 -6 stars penalty for each consequent missed review
+            <td>⏰⚠️ review once per 1 hour, <u>no reminders</u><br/>
+                😺 reward for a review: 1 star<br/>
+                😿 penalty for the first miss: -3 stars<br/>
+                🙀 penalty for every <a href="#next_penalty">consequent(*) miss</a>: -6 stars<br />
             </td>
         </tr>
         <tr>
             <td>Expert</td>
-            <td>⏰ review once per 45 minutes<br/>
-                    🙀 -6 stars penalty for missed review
+            <td>⏰⚠️ review once per 45 minutes, <u>no reminders</u><br/>
+                😺 reward for a review: 1 star<br/>
+                🙀 penalty for every miss: -6 stars<br />
             </td>
         </tr>
     </table>
 
-    <p>
-        You can review your <i>Formula</i> as often as you'd like, however only the reviews performed at least
-        5 minutes apart from each other will be rewarded ("cool-down" rule).
+    <p id="next_penalty">
+        (*) Once you perform a review, the "penalty counter" restarts. Let's say your difficulty level is "Easy" and
+        you miss some reviews. This is what happens:
+    <ul>
+        <li>
+            ⏰ the game sends a reminder notification
+            <ul><li>😼 (in 15 minutes) first miss: no penalties</li></ul>
+        </li>
+        <li>
+            ⏰ (in 2 hours 45 minutes) the game sends a reminder notification
+            <ul><li>😿 (in 15 minutes) consequent miss: -3 stars</li></ul>
+        </li>
+        <li>
+            ⏰ (in 2 hours 45 minutes) the game sends a reminder notification
+            <ul><li>😿 (in 15 minutes) consequent miss: -3 stars</li></ul>
+        </li>
+        <li>
+            <strong>😺 you review your <i>Formula</i>: +1 star</strong>
+            <ul><li>the "penalty counter" is restarted</li></ul>
+        </li>
+        <li>
+            ⏰ (in 2 hours 45 minutes) the game sends a reminder notification
+            <ul><li><strong>😼 (in 15 minutes) first miss: no penalties</strong></li></ul>
+        </li>
+        <li>
+            ⏰ the game sends a reminder notification
+            <ul><li>😿 (in 15 minutes) consequent miss: -3 stars</li></ul>
+        </li>
+    </ul>
     </p>
+
 </div>
 
 <div id="smooth-pause" class="faq-item">

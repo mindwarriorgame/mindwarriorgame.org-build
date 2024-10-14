@@ -103,13 +103,14 @@
 
     </div>
 
+
     <div id="smooth-forgot" class="faq-item">
         <h3>¿Qué sucede si olvido revisar mi Fórmula?</h3>
 
         <p>
             Si olvidas revisar tu <i>Fórmula de firme resolución</i> a tiempo, el juego te recordará con una notificación.
-            Dependiendo del nivel de dificultad del juego, también podrías ser penalizado.
-            Por favor, <a href="#difficulty">consulta la siguiente respuesta</a> para obtener detalles sobre las posibles penalizaciones.
+            Si la ignoras, entonces (dependiendo del nivel de dificultad) podrías ser penalizado.
+            Por favor, <a href="#difficulty">consulta la tabla en la siguiente respuesta</a> para más detalles.
         </p>
 
         <p>
@@ -118,55 +119,102 @@
 
     </div>
 
+
     <div id="smooth-difficulty" class="faq-item">
-        <h3>¿Con qué frecuencia necesito revisar mi Fórmula?</h3>
+        <h3>¿Con qué frecuencia debo revisar mi Fórmula?</h3>
 
         <p>
-            La frecuencia de las revisiones y las penalizaciones por revisiones perdidas están determinadas por el nivel de dificultad del juego.
+            Puedes revisar tu <i>Fórmula</i> tantas veces como quieras, pero solo las revisiones realizadas con al menos
+            5 minutos de diferencia entre ellas serán recompensadas (regla de "enfriamiento").
+        </p>
+
+        <p>
+            La frecuencia de las revisiones y las penalizaciones por las revisiones no realizadas se determinan por el nivel de dificultad del juego,
+            el cual puedes cambiar en cualquier momento usando el comando <span class="code-highlight">/difficulty</span>.
+        </p>
+
+        <p>
+            Si olvidas revisar tu <i>Fórmula</i>, entonces (dependiendo del nivel de dificultad) podrías ser penalizado.
         </p>
 
         <table>
             <tr>
                 <td>Principiante</td>
                 <td>
-                    ⏰ revisión una vez cada 6 horas<br/>
-                    😌 sin penalización por revisiones perdidas
+                    ⏰ revisar una vez cada 6 horas<br/>
+                    😻 recompensa por una revisión antes del recordatorio: 2 estrellas<br/>
+                    😺 recompensa por una revisión después del recordatorio: 1 estrella<br/>
+                    😼 sin penalización
                 </td>
             </tr>
             <tr>
                 <td>Fácil</td>
-                <td>⏰ revisión una vez cada 3 horas<br/>
-                    😌 sin penalización por la primera revisión perdida<br/>
-                    😿 penalización de -3 estrellas por cada revisión perdida consecuente
+                <td>⏰ revisar una vez cada 3 horas<br/>
+                    😻 recompensa por una revisión antes del recordatorio: 2 estrellas<br/>
+                    😺 recompensa por una revisión después del recordatorio: 1 estrella<br/>
+                    😼 penalización por la primera falta: sin penalización<br/>
+                    😿 penalización por cada <a href="#next_penalty">falta consecuente(*)</a>: -3 estrellas<br />
                 </td>
             </tr>
             <tr>
-                <td>Medio</td>
-                <td>⏰ revisión una vez cada 1 hora 30 minutos<br/>
-                    😿 penalización de -3 estrellas por la primera revisión perdida<br/>
-                    🙀 penalización de -6 estrellas por cada revisión perdida consecuente
+                <td>Normal</td>
+                <td>⏰ revisar una vez cada 1 hora y 30 minutos<br/>
+                    😺 recompensa por una revisión antes del recordatorio: 1 estrella<br/>
+                    😺 recompensa por una revisión después del recordatorio: 1 estrella<br/>
+                    😿 penalización por la primera falta: -3 estrellas<br/>
+                    🙀 penalización por cada <a href="#next_penalty">falta consecuente(*)</a>: -6 estrellas<br />
                 </td>
             </tr>
             <tr>
                 <td>Difícil</td>
-                <td>⏰ revisión una vez cada 1 hora<br/>
-                    😿 penalización de -3 estrellas por la primera revisión perdida<br/>
-                    🙀 penalización de -6 estrellas por cada revisión perdida consecuente
+                <td>⏰⚠️ revisar una vez cada 1 hora, <u>sin recordatorios</u><br/>
+                    😺 recompensa por una revisión: 1 estrella<br/>
+                    😿 penalización por la primera falta: -3 estrellas<br/>
+                    🙀 penalización por cada <a href="#next_penalty">falta consecuente(*)</a>: -6 estrellas<br />
                 </td>
             </tr>
             <tr>
                 <td>Experto</td>
-                <td>⏰ revisión una vez cada 45 minutos<br/>
-                    🙀 penalización de -6 estrellas por revisión perdida
+                <td>⏰⚠️ revisar una vez cada 45 minutos, <u>sin recordatorios</u><br/>
+                    😺 recompensa por una revisión: 1 estrella<br/>
+                    🙀 penalización por cada falta: -6 estrellas<br />
                 </td>
             </tr>
         </table>
 
-        <p>
-            Puedes revisar tu <i>Fórmula</i> tan a menudo como desees, sin embargo, solo las revisiones realizadas al menos
-            5 minutos apartadas entre sí serán recompensadas (regla de "tiempo de espera").
+        <p id="next_penalty">
+            (*) Una vez que realices una revisión, el "contador de penalización" se reinicia. Supongamos que tu nivel de dificultad es "Fácil" y
+            olvidas algunas revisiones. Esto es lo que sucede:
+        <ul>
+            <li>
+                ⏰ el juego envía una notificación de recordatorio
+                <ul><li>😼 (en 15 minutos) primera falta: sin penalización</li></ul>
+            </li>
+            <li>
+                ⏰ (en 2 horas y 45 minutos) el juego envía una notificación de recordatorio
+                <ul><li>😿 (en 15 minutos) falta consecuente: -3 estrellas</li></ul>
+            </li>
+            <li>
+                ⏰ (en 2 horas y 45 minutos) el juego envía una notificación de recordatorio
+                <ul><li>😿 (en 15 minutos) falta consecuente: -3 estrellas</li></ul>
+            </li>
+            <li>
+                <strong>😺 realizas tu revisión de la <i>Fórmula</i>: +1 estrella</strong>
+                <ul><li>el "contador de penalización" se reinicia</li></ul>
+            </li>
+            <li>
+                ⏰ (en 2 horas y 45 minutos) el juego envía una notificación de recordatorio
+                <ul><li><strong>😼 (en 15 minutos) primera falta: sin penalización</strong></li></ul>
+            </li>
+            <li>
+                ⏰ el juego envía una notificación de recordatorio
+                <ul><li>😿 (en 15 minutos) falta consecuente: -3 estrellas</li></ul>
+            </li>
+        </ul>
         </p>
+
     </div>
+
 
 
     <div id="smooth-pause" class="faq-item">
