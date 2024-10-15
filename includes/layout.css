@@ -152,6 +152,7 @@ h2, h3, h4 {
 
 .content .faq-item {
     margin-bottom: 25px;
+    scroll-behavior: smooth;
 }
 
 .content a {

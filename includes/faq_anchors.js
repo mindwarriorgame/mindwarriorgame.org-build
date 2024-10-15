@@ -94,13 +94,11 @@ function onAnchorChanged(anchor) {
         return;
     }
 
-    const targetQuestionSelector = '#smooth-' + anchor.substring(1);
-    setTimeout(() => {
-        document.querySelector(targetQuestionSelector).scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-        });
-    }, 50);
+    const targetQuestionSelector = '#smooth-' + anchor.substring(1) + " h3";
+    document.querySelector(targetQuestionSelector).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    })
     activeMenuItemUpdater.setActiveQuestion(questionMenuItemElt);
 
     activeMenuItemUpdater.stopListenFaqContentScrolling();
