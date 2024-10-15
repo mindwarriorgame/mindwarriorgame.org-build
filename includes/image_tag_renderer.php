@@ -2,6 +2,8 @@
 
 /**
  * Calculates height (preserving ratio). Otherwise smooth scrolling is broken somehow on Android (FAQ)
+ *
+ * (See https://stackoverflow.com/a/79088127/1432640)
  */
 function renderImageTag($width, $image_path, $image_url) {
     // Get image dimensions

@@ -98,7 +98,7 @@ function onAnchorChanged(anchor) {
     document.querySelector(targetQuestionSelector).scrollIntoView({
         behavior: "smooth",
         block: "start",
-    })
+    });
     activeMenuItemUpdater.setActiveQuestion(questionMenuItemElt);
 
     activeMenuItemUpdater.stopListenFaqContentScrolling();
