@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Privacy policy</title>
-    <link rel="stylesheet" href="/includes/layout.css?1731416229">
-    <link rel="stylesheet" href="/includes/popup.css?1731416229">
+    <link rel="stylesheet" href="/includes/layout.css?1731461218">
+    <link rel="stylesheet" href="/includes/popup.css?1731461218">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1731416229'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1731461218'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -21,7 +21,7 @@
         </ul>
         <h2>FAQ</h2>
         <ul id="faq-questions">
-            <li data-target='purpose'><a href="/faq.en.html#purpose">What is the purpose of the game?</a></li><li data-target='formula'><a href="/faq.en.html#formula">What should I write in my Formula?</a></li><li data-target='review'><a href="/faq.en.html#review">What happens when I review my Formula?</a></li><li data-target='forgot'><a href="/faq.en.html#forgot">What happens if I forget to review my Formula?</a></li><li data-target='difficulty'><a href="/faq.en.html#difficulty">How often do I need to review my Formula?</a></li><li data-target='pause'><a href="/faq.en.html#pause">How to take a break without penalties?</a></li><li data-target='formula-formatting'><a href="/faq.en.html#formula-formatting">Can I use text formatting in Formula?</a></li><li data-target='controls'><a href="/faq.en.html#controls">Which controls does the game have?</a></li><li data-target='name'><a href="/faq.en.html#name">Why the game is called "MindWarrior"?</a></li><li data-target='formula-example'><a href="/faq.en.html#formula-example">Can I see Formulas of other players?</a></li><li data-target='share'><a href="/faq.en.html#share">Can I share my Formula with others players?</a></li><li data-target='privacy'><a href="/faq.en.html#privacy">Who could see my Formula?</a></li>        </ul>
+            <li data-target='purpose'><a href="/faq.en.html#purpose">Purpose of the game</a></li><li data-target='formula'><a href="/faq.en.html#formula">What to write in Formula</a></li><li data-target='review'><a href="/faq.en.html#review">What happens when I review my Formula?</a></li><li data-target='forgot'><a href="/faq.en.html#forgot">What if I forget to review my Formula?</a></li><li data-target='difficulty'><a href="/faq.en.html#difficulty">How often to review my Formula?</a></li><li data-target='pause'><a href="/faq.en.html#pause">Take a break without penalties</a></li><li data-target='formula-formatting'><a href="/faq.en.html#formula-formatting">Formatting in Formula</a></li><li data-target='controls'><a href="/faq.en.html#controls">Game commands</a></li><li data-target='name'><a href="/faq.en.html#name">Why the name is "MindWarrior"?</a></li><li data-target='formula-example'><a href="/faq.en.html#formula-example">Formulas of other players?</a></li><li data-target='share'><a href="/faq.en.html#share">Can I share my Formula?</a></li><li data-target='privacy'><a href="/faq.en.html#privacy">Who can see my Formula?</a></li>        </ul>
     </div>
 
     <div class="content">
@@ -71,8 +71,7 @@
     <h4>Game Data</h4>
     <ul>
         <li>
-            <span class="code-highlight">difficulty</span>,
-            <span class="code-highlight">rewards</span>: plain numbers
+            <span class="code-highlight">difficulty</span>
         </li>
 
 
@@ -84,8 +83,7 @@
         </li>
 
         <li>
-            <span class="code-highlight">last_reward_time</span>,
-            <span class="code-highlight">next_prompt_time</span>: timestamps
+            <span class="code-highlight">next_prompt_time</span>: timestamp
         </li>
         <li>
             <span class="code-highlight">next_prompt_type</span>: string (could contain only 2 possible values: "reminder" and "penalty")
@@ -93,6 +91,10 @@
 
         <li>
             <span class="code-highlight">counters_history_serialized</span>: historical data of player's counters for rendering the progress chart
+        </li>
+
+        <li>
+            <span class="code-highlight">badges_serialized</span>: the data about the game board: earned badges, their statuses, level etc.
         </li>
 
 
@@ -111,11 +113,11 @@
         disclosure, alteration, or destruction.</p>
 
     <h3>Your Rights</h3>
-    <p>You have the following rights regarding your data:</p>
+    <p>You have the following controls regarding your data:</p>
     <ul>
         <li><strong>Access</strong>: You can access all you data anytime by using
             <span class="code-highlight">/data</span> command. That will
-            return all your raw data that the game stores about you.</li>
+            return all your raw data that the game stores about you on its server.</li>
         <li><strong>Deletion</strong>: You can delete your data at any time by using
             <span class="code-highlight">/data</span> bot command and then clicking "Delete" button.
             <ul>
@@ -138,10 +140,12 @@
     </p>
 
     <h3>Changes to This Policy</h3>
+
     <p>We may update this policy from time to time. Please make sure to regularly check this page
         to review the latest version of our privacy policy.</p>
 
     <h2>Contact Us</h2>
+
     <p>If you have any questions or concerns about this policy,
         please raise it as a GitHub Issue:
         <a href="https://github.com/mindwarriorgame/mindwarrior-telegram-bot/issues" target="_blank">https://github.com/mindwarriorgame/mindwarrior-telegram-bot/issues</a>
