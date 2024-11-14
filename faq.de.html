@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: FAQ</title>
-    <link rel="stylesheet" href="/includes/layout.css?1731498448">
-    <link rel="stylesheet" href="/includes/popup.css?1731498448">
+    <link rel="stylesheet" href="/includes/layout.css?1731566525">
+    <link rel="stylesheet" href="/includes/popup.css?1731566525">
 
-    <link rel='stylesheet' href='/includes/faq_anchors.css?1731498448'></head>
+    <link rel='stylesheet' href='/includes/faq_anchors.css?1731566525'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -68,7 +68,7 @@
 
         <p>
             Im Spiel, wenn du die Überprüfung durchführst, ohne daran erinnert zu werden,
-            erhältst du Spielbelohnungen! Bitte <a href="#difficulty">siehe die Tabelle unten</a> für die Details.
+            erhältst du Spielbelohnungen!
         </p>
 
         <p>
@@ -85,14 +85,13 @@
         <h3>Was passiert, wenn ich vergesse, meine Formel zu überprüfen?</h3>
 
         <p>
-            Wenn du vergisst, deine <i>Formel des festen Entschlusses</i> rechtzeitig zu überprüfen, wird dich das Spiel mit einer Benachrichtigung daran erinnern.
-            Wenn du sie ignorierst, könntest du (abhängig vom Schwierigkeitsgrad) bestraft werden.
-            Bitte <a href="#difficulty">siehe die Tabelle in der nächsten Antwort</a> für die Details.
+            Wenn Sie vergessen, Ihre <i>Formel für einen festen Entschluss</i> rechtzeitig zu überprüfen, werden Sie vom Spiel mit einer Benachrichtigung daran erinnert.
+            Wenn Sie dies ignorieren, kann es (je nach Schwierigkeitsgrad) zu einer Strafe kommen.
         </p>
 
         <p>
             <a href="/images/faq_en/review_minus_score.jpg" class="image-link" target="_blank">
-                <img src="/images/faq_en/review_minus_score.jpg" width="200" height="193" alt="Image">            </a>
+                <img src="/images/faq_en/review_minus_score.jpg" width="450" height="435" alt="Image">            </a>
         </p>
 
     </div>
@@ -102,150 +101,65 @@
         <h3>Wie oft muss ich meine Formel überprüfen?</h3>
 
         <p>
-            Du kannst deine <i>Formel</i> so oft überprüfen, wie du möchtest, jedoch werden nur die Überprüfungen belohnt,
-            die mindestens 5 Minuten auseinander liegen (Regel zur "Abkühlzeit").
+            Sie können Ihre <i>Formel</i> so oft überprüfen, wie Sie möchten. Allerdings werden nur die Überprüfungen, die mindestens
+            5 Minuten auseinander liegen, belohnt (Regel der "Abkühlzeit").
         </p>
 
         <p>
             Die Häufigkeit der Überprüfungen und die Strafen für verpasste Überprüfungen werden durch den Schwierigkeitsgrad des Spiels bestimmt,
-            den du jederzeit mit dem Befehl <span class="code-highlight">/difficulty</span> ändern kannst.
+            den Sie jederzeit mit dem <span class="code-highlight">/difficulty</span>-Befehl ändern können.
         </p>
-
-        <p>
-            Wenn du vergisst, deine <i>Formel</i> zu überprüfen, kann es (abhängig vom Schwierigkeitsgrad) zu einer Strafe kommen.
-        </p>
-
-        <table>
-            <tr>
-                <td>Beginner</td>
-                <td>
-                    ⏰ Überprüfung alle 6 Stunden<br/>
-                    😻 Belohnung für eine Überprüfung vor der Erinnerung: 2 Sterne<br/>
-                    😺 Belohnung für eine Überprüfung nach der Erinnerung: 1 Stern<br/>
-                    😼 keine Strafe
-                </td>
-            </tr>
-            <tr>
-                <td>Einfach</td>
-                <td>⏰ Überprüfung alle 3 Stunden<br/>
-                    😻 Belohnung für eine Überprüfung vor der Erinnerung: 2 Sterne<br/>
-                    😺 Belohnung für eine Überprüfung nach der Erinnerung: 1 Stern<br/>
-                    😼 Strafe für das erste Versäumnis: keine Strafe<br/>
-                    😿 Strafe für jedes <a href="#next_penalty">weitere(*) Versäumnis</a>: -3 Sterne<br />
-                </td>
-            </tr>
-            <tr>
-                <td>Normal</td>
-                <td>⏰ Überprüfung alle 1 Stunde 30 Minuten<br/>
-                    😺 Belohnung für eine Überprüfung vor der Erinnerung: 1 Stern<br/>
-                    😺 Belohnung für eine Überprüfung nach der Erinnerung: 1 Stern<br/>
-                    😿 Strafe für das erste Versäumnis: -3 Sterne<br/>
-                    🙀 Strafe für jedes <a href="#next_penalty">weitere(*) Versäumnis</a>: -6 Sterne<br />
-                </td>
-            </tr>
-            <tr>
-                <td>Schwer</td>
-                <td>⏰⚠️ Überprüfung jede Stunde, <u>keine Erinnerungen</u><br/>
-                    😺 Belohnung für eine Überprüfung: 1 Stern<br/>
-                    😿 Strafe für das erste Versäumnis: -3 Sterne<br/>
-                    🙀 Strafe für jedes <a href="#next_penalty">weitere(*) Versäumnis</a>: -6 Sterne<br />
-                </td>
-            </tr>
-            <tr>
-                <td>Experte</td>
-                <td>⏰⚠️ Überprüfung alle 45 Minuten, <u>keine Erinnerungen</u><br/>
-                    😺 Belohnung für eine Überprüfung: 1 Stern<br/>
-                    🙀 Strafe für jedes Versäumnis: -6 Sterne<br />
-                </td>
-            </tr>
-        </table>
-
-        <p id="next_penalty">
-            (*) Sobald du eine Überprüfung durchführst, wird der "Strafzähler" zurückgesetzt. Angenommen, dein Schwierigkeitsgrad ist "Einfach" und
-            du verpasst einige Überprüfungen. Das passiert dann:
-        <ul>
-            <li>
-                ⏰ das Spiel sendet eine Erinnerung
-                <ul><li>😼 (in 15 Minuten) erstes Versäumnis: keine Strafe</li></ul>
-            </li>
-            <li>
-                ⏰ (in 2 Stunden 45 Minuten) das Spiel sendet eine Erinnerung
-                <ul><li>😿 (in 15 Minuten) weiteres Versäumnis: -3 Sterne</li></ul>
-            </li>
-            <li>
-                ⏰ (in 2 Stunden 45 Minuten) das Spiel sendet eine Erinnerung
-                <ul><li>😿 (in 15 Minuten) weiteres Versäumnis: -3 Sterne</li></ul>
-            </li>
-            <li>
-                <strong>😺 du überprüfst deine <i>Formel</i>: +1 Stern</strong>
-                <ul><li>der "Strafzähler" wird zurückgesetzt</li></ul>
-            </li>
-            <li>
-                ⏰ (in 2 Stunden 45 Minuten) das Spiel sendet eine Erinnerung
-                <ul><li><strong>😼 (in 15 Minuten) erstes Versäumnis: keine Strafe</strong></li></ul>
-            </li>
-            <li>
-                ⏰ das Spiel sendet eine Erinnerung
-                <ul><li>😿 (in 15 Minuten) weiteres Versäumnis: -3 Sterne</li></ul>
-            </li>
-        </ul>
-        </p>
-
     </div>
 
-
     <div id="smooth-pause" class="faq-item">
-        <h3>Wie macht man eine Pause ohne Strafen?</h3>
+        <h3>Wie mache ich eine Pause ohne Strafen?</h3>
 
         <p>
-            Um eine Pause einzulegen, einfach das Spiel mit dem <span class="pre">/pause</span> Befehl pausieren.
+            Um eine Pause einzulegen, pausieren Sie das Spiel einfach mit dem <span class="pre">/pause</span>-Befehl.
         </p>
 
         <p>
-            Das pausierte Spiel sendet keine Benachrichtigungen und ändert deine Spielstände nicht.
-            Auch der aktive Spielzeit-Zähler wird nicht laufen.
+            Das pausierte Spiel sendet Ihnen keine Benachrichtigungen und verändert Ihre Spielpunkte nicht.
+            Auch der Zähler für die aktive Spielzeit wird nicht fortlaufen.
         </p>
 
         <p>
-            Um das Spiel fortzusetzen, einfach deine <i>Formel</i> wie gewohnt überprüfen.
+            Um das Spiel fortzusetzen, überprüfen Sie einfach wie gewohnt Ihre <i>Formel</i>.
         </p>
     </div>
 
     <div id="smooth-formula-formatting" class="faq-item">
-        <h3>Kann ich Textformatierung in der Formel verwenden?</h3>
+        <h3>Kann ich Textformatierungen in der Formel verwenden?</h3>
 
         <p>
-            Der <i>Formel</i>-Editor unterstützt die <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown-Syntax</a>.
+            Der <i>Formel</i>-Editor unterstützt <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown-Syntax</a>.
         </p>
         <p>
-            <a href="/images/faq_en/markdown.jpg" class="image-link" target="_blank>">
-                <img src="/images/faq_en/markdown.jpg" width="300" height="294" alt="Image">            </a>
+            <a href="/images/faq_en/markdown.jpg" class="image-link" target="_blank">
+                <img src="/images/faq_en/markdown.jpg" width="450" height="441" alt="Image">            </a>
         </p>
     </div>
+
 
     <div id="smooth-controls" class="faq-item">
         <h3>️Welche Steuerungen hat das Spiel?</h3>
         <p>
-            Um zu spielen, benötigst du nur 3 grundlegende Befehle:
+            Das Spiel unterstützt die folgenden Befehle:
         </p>
         <ul>
-            <li><strong><span class="pre">/review</span></strong> - 💫 <a href="#review">überprüfe</a> deine <i>Formel</i></li>
-            <li><strong><span class="pre">/pause</span></strong> - ⏸️ <a href="#pause">pausiere</a> das Spiel</li>
-            <li><strong><span class="pre">/formula</span></strong> - 🧪 öffne deine <a href="#formula"><i>Formel</i></a> im Editor</li>
+            <li><strong><span class="pre">/review</span></strong> - 💫 <a href="#review">Überprüfen</a> Ihrer <i>Formel</i></li>
+            <li><strong><span class="pre">/pause</span></strong> - ⏸️ <a href="#pause">Pausieren</a> des Spiels</li>
+            <li><strong><span class="pre">/formula</span></strong> - 🧪 Öffnen Ihrer <a href="#formula"><i>Formel</i></a> im Editor</li>
+            <li><span class="pre">/stats</span> - 📊 Anzeigen Ihres Spielfortschritts</li>
+            <li><span class="pre">/difficulty</span> - 💪 Ändern des <a href="#difficulty">Schwierigkeitsgrads</a> (Häufigkeit Ihrer Überprüfungen)</li>
+            <li><span class="pre">/data</span> - 💾️ Anzeigen und Verwalten Ihrer Rohdaten</li>
         </ul>
         <p>
-            Erweiterte Befehle:
-        </p>
-        <ul>
-            <li><span class="pre">/stats</span> - 🌟 sieh dir deinen Spielverlauf an</li>
-            <li><span class="pre">/difficulty</span> - 💪 ändere das <a href="#difficulty">Schwierigkeitslevel</a> (Häufigkeit deiner Überprüfungen)</li>
-            <li><span class="pre">/data</span> - 🗂️ zeige und verwalte deine Rohdaten</li>
-        </ul>
-        <p>
-            <a href="/images/faq_en/menu.jpg" class="image-link" target="_blank>">
-                <img src="/images/faq_en/menu.jpg" width="300" height="294" alt="Image">            </a>
+            <a href="/images/faq_en/menu.jpg" class="image-link" target="_blank">
+                <img src="/images/faq_en/menu.jpg" width="450" height="441" alt="Image">            </a>
         </p>
     </div>
+
 
 
 
@@ -373,5 +287,5 @@
 <script src="/includes/layout.js"></script>
 <script src="/includes/popup.js"></script>
 
-<script src='/includes/faq_anchors.js?1731498448'></script></body>
+<script src='/includes/faq_anchors.js?1731566525'></script></body>
 </html>
