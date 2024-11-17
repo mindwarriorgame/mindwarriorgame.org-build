@@ -1,4 +1,4 @@
-.content div.active h3 {
+.content div.active h3, .content div.active .anchor {
     background-color: #ffffaa;
 }
 

@@ -88,14 +88,19 @@ function initFaqQuestionsLinks() {
 }
 
 function onAnchorChanged(anchor) {
-    const questionMenuItemElt = document.querySelector(`#sidebar li[data-target="${anchor.split('#').join('')}"]`);
+    const anchorFixed = anchor.split('#').join('');
+    const questionMenuItem = anchorFixed.indexOf('.') >= 0 ? anchorFixed.split('.')[0] : anchorFixed;
+    const paragraphItem = anchorFixed.indexOf('.') >= 0 ? anchorFixed.split('.')[1] : undefined;
+    const questionMenuItemElt = document.querySelector(`#sidebar li[data-target="${questionMenuItem}"]`);
+    console.log("Anchor changed", questionMenuItem, paragraphItem);
     if (!questionMenuItemElt) {
         console.log("Cannot find FAQ question", anchor);
         return;
     }
 
-    const targetQuestionSelector = '#smooth-' + anchor.substring(1) + " h3";
-    document.querySelector(targetQuestionSelector).scrollIntoView({
+    const targetEltSelector = paragraphItem ? '#smooth-' + questionMenuItem + '-' + paragraphItem : '#smooth-' + questionMenuItem + " h3";
+    console.log("Target selector", targetEltSelector);
+    document.querySelector(targetEltSelector).scrollIntoView({
         behavior: "smooth",
         block: "start",
     });
