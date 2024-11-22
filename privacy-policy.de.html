@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Datenschutzrichtlinie</title>
-    <link rel="stylesheet" href="/includes/layout.css?1732312117">
-    <link rel="stylesheet" href="/includes/popup.css?1732312117">
+    <link rel="stylesheet" href="/includes/layout.css?1732312677">
+    <link rel="stylesheet" href="/includes/popup.css?1732312677">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1732312117'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1732312677'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -81,7 +81,7 @@
         </li>
 
         <li>
-            <span class="code-highlight">next_prompt_time</span>: Zeitstempel
+            <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: Zeitstempel
         </li>
         <li>
             <span class="code-highlight">next_prompt_type</span>: Zeichenkette (kann nur zwei mögliche Werte enthalten: „reminder“ und „penalty“)
@@ -93,6 +93,10 @@
 
         <li>
             <span class="code-highlight">badges_serialized</span>: Die Daten über das Spielbrett: verdiente Abzeichen, deren Status, Level usw.
+        </li>
+
+        <li>
+            <span class="code-highlight">autopause_config_serialized</span>: Einstellungen des Schlafplaners. ⚠️Enthält die Zeitzone des Benutzers (sofern die Funktion verwendet wird).
         </li>
     </ul>
 

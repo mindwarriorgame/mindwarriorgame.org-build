@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Политика конфиденциальности</title>
-    <link rel="stylesheet" href="/includes/layout.css?1732312117">
-    <link rel="stylesheet" href="/includes/popup.css?1732312117">
+    <link rel="stylesheet" href="/includes/layout.css?1732312677">
+    <link rel="stylesheet" href="/includes/popup.css?1732312677">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1732312117'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1732312677'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -84,7 +84,7 @@
         </li>
 
         <li>
-            <span class="code-highlight">next_prompt_time</span>: дата и время
+            <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: дата и время
         </li>
         <li>
             <span class="code-highlight">next_prompt_type</span>: строка (может хранить только два значения: "reminder" или "penalty")
@@ -100,6 +100,10 @@
 
         <li>
             <span class="code-highlight">badges_serialized</span>: игровая доска игрока: уровень, заработанные достижения, закрытые достижения, прогресс для следующего достижения и т. д.
+        </li>
+
+        <li>
+            <span class="code-highlight">autopause_config_serialized</span>: настройки планировщика сна. ⚠️Содержит часовой пояс пользователя (если функция используется).
         </li>
 
 
