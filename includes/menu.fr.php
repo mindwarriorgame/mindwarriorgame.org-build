@@ -2,7 +2,7 @@
 
 return array(
     'start' => 'Commencer à jouer',
-    'quick-start' => 'Guide rapide',
+    'quick-start' => 'Guide de démarrage rapide',
     'public-formulas' => 'Formules publiques',
     'privacy-policy' => 'Politique de confidentialité',
     'faq' => 'FAQ',
