@@ -18,6 +18,9 @@
 <body>
 <?php
     $LINK_EXT = getenv('LINK_EXT');
+    if (!isset($ACTIVE_MENU)) {
+        $ACTIVE_MENU = '';
+    }
 ?>
 <button class="menu-btn">☰</button>
 
@@ -26,9 +29,20 @@
         <div id="logo"><img src="/images/layout/ai-generated-8707933_1280-modified-small.png" alt="MindWarrior" title="MindWarrior" /></div>
         <ul>
             <li><a href="https://t.me/MindWarriorGame_bot" target="_blank"><?=$MENU['start']; ?></a></li>
-            <li><a href="/quick-start.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['quick-start']; ?></a></li>
-            <li><a href="/public-formulas.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['public-formulas']; ?></a></li>
-            <li><a href="/privacy-policy.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['privacy-policy']; ?></a></li>
+            <?php
+                $class = $ACTIVE_MENU == 'quick-start' ? "active" : "";
+            ?>
+            <li class="<?=$class;?>"><a href="/quick-start.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['quick-start']; ?></a></li>
+
+            <?php
+            $class = $ACTIVE_MENU == 'public-formulas' ? "active" : "";
+            ?>
+            <li class="<?=$class;?>"><a href="/public-formulas.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['public-formulas']; ?></a></li>
+
+            <?php
+            $class = $ACTIVE_MENU == 'privacy-policy' ? "active" : "";
+            ?>
+            <li class="<?=$class;?>"><a href="/privacy-policy.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['privacy-policy']; ?></a></li>
         </ul>
         <h2><?=$MENU['faq']; ?></h2>
         <ul id="faq-questions">
