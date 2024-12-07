@@ -25,6 +25,7 @@
     <div class="sidebar" id="sidebar">
         <div id="logo"><img src="/images/layout/ai-generated-8707933_1280-modified-small.png" alt="MindWarrior" title="MindWarrior" /></div>
         <ul>
+            <li><a href="https://t.me/MindWarriorGame_bot" target="_blank"><?=$MENU['start']; ?></a></li>
             <li><a href="/quick-start.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['quick-start']; ?></a></li>
             <li><a href="/public-formulas.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['public-formulas']; ?></a></li>
             <li><a href="/privacy-policy.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['privacy-policy']; ?></a></li>

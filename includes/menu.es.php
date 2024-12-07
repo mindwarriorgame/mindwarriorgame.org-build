@@ -1,20 +1,21 @@
 <?php
 
 return array(
-    'quick-start' => 'Inicio rápido',
+    'start' => 'Comienza a jugar',
+    'quick-start' => 'Guía rápida',
     'public-formulas' => 'Fórmulas públicas',
     'privacy-policy' => 'Política de privacidad',
     'faq' => 'Preguntas frecuentes',
-    'purpose' => 'Objetivo del juego',
-    'formula' => 'Qué escribir en la Fórmula',
-    'review' => '¿Qué sucede cuando reviso mi Fórmula?',
-    'forgot' => '¿Qué pasa si me olvido de revisar mi Fórmula?',
-    'difficulty' => '¿Con qué frecuencia debo revisar mi Fórmula?',
-    'pause' => 'Tómate un descanso sin penalizaciones',
-    'formula-formatting' => 'Formato en la Fórmula',
-    'controls' => 'Comandos del juego',
-    'name' => '¿Por qué el nombre es "MindWarrior"?',
-    'formula-example' => 'Fórmulas de otras jugadores?',
-    'share' => '¿Puedo compartir mi Fórmula?',
-    'privacy' => '¿Quién puede ver mi Fórmula?'
+    'purpose' => '¿De qué se trata esto?',
+    'formula' => 'Fórmula',
+    'review' => 'Revisar "Fórmula"',
+    'forgot' => 'Olvidé revisar',
+    'difficulty' => 'Frecuencia de revisión',
+    'pause' => 'Pausar el juego',
+    'formula-formatting' => 'Formato de "Fórmula"',
+    'controls' => 'Comandos',
+    'name' => '¿Por qué "MindWarrior"?',
+    'formula-example' => '"Fórmulas" de otros',
+    'share' => 'Compartiendo "Fórmula"',
+    'privacy' => 'Privacidad'
 );
