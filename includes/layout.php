@@ -28,7 +28,7 @@
     <div class="sidebar" id="sidebar">
         <div id="logo"><img src="/images/layout/ai-generated-8707933_1280-modified-small.png" alt="MindWarrior" title="MindWarrior" /></div>
         <ul>
-            <li><a href="https://t.me/MindWarriorGame_bot" target="_blank"><?=$MENU['start']; ?></a></li>
+            <li><img src="/images/telegram.svg" width="32" style="vertical-align: middle" /> <a href="https://t.me/MindWarriorGame_bot" target="_blank"><?=$MENU['start']; ?></a></li>
             <?php
                 $class = $ACTIVE_MENU == 'quick-start' ? "active" : "";
             ?>
