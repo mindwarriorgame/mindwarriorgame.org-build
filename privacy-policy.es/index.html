@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Política de privacidad</title>
-    <link rel="stylesheet" href="/includes/layout.css?1765454131">
-    <link rel="stylesheet" href="/includes/popup.css?1765454131">
+    <link rel="stylesheet" href="/includes/layout.css?1765935120">
+    <link rel="stylesheet" href="/includes/popup.css?1765935120">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1765454131'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1765935120'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -71,38 +71,57 @@
         <li><span class="code-highlight">shared_key_uuid</span>: una cadena aleatoria asociada con el usuario.</li>
     </ul>
 
-    <h4>Datos del Juego</h4>
-    <ul>
-        <li>
-            <span class="code-highlight">difficulty</span>
-        </li>
+    <h4>Datos del juego</h4>
+<ul>
+  <li>
+    <span class="code-highlight">difficulty</span>
+  </li>
 
-        <li>
-            <span class="code-highlight">review_counter_state</span>,
-            <span class="code-highlight">active_game_counter_state</span>,
-            <span class="code-highlight">paused_counter_state</span>: valores de temporizador de cronómetro que
-            contienen marcas de tiempo, contadores de tiempo transcurrido y banderas de estado.
-        </li>
+  <li>
+    <span class="code-highlight">diamonds</span>: cantidad actual de diamantes obtenidos
+  </li>
+  <li>
+    <span class="code-highlight">diamonds_spent</span>: cantidad de diamantes gastados
+  </li>
+  <li>
+    <span class="code-highlight">has_repeller</span>: si el usuario tiene disponible un repelente de gato gruñón para usar
+  </li>
 
-        <li>
-            <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: marcas de tiempo
-        </li>
-        <li>
-            <span class="code-highlight">next_prompt_type</span>: cadena (solo puede contener 2 valores posibles: "reminder" y "penalty")
-        </li>
+  <li>
+    <span class="code-highlight">review_counter_state</span>,
+    <span class="code-highlight">active_game_counter_state</span>,
+    <span class="code-highlight">paused_counter_state</span>: valores del cronómetro que
+    contienen marcas de tiempo, contadores de tiempo transcurrido y marcas de estado
+  </li>
 
-        <li>
-            <span class="code-highlight">counters_history_serialized</span>: datos históricos de los contadores del jugador para renderizar el gráfico de progreso
-        </li>
+  <li>
+    <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: marcas de tiempo
+  </li>
+  <li>
+    <span class="code-highlight">next_prompt_type</span>: cadena (solo puede contener 2 valores posibles: "reminder" y "penalty")
+  </li>
 
-        <li>
-            <span class="code-highlight">badges_serialized</span>: datos sobre el tablero del juego: insignias obtenidas, sus estados, nivel, etc.
-        </li>
+  <li>
+    <span class="code-highlight">last_reward_time_at_active_counter_time_secs</span>: temporizador para registrar el tiempo desde que se otorgó la última recompensa
+  </li>
 
-        <li>
-            <span class="code-highlight">autopause_config_serialized</span>: configuración del programador de sueño. ⚠️Contiene la zona horaria del usuario (si se utiliza la función).
-        </li>
-    </ul>
+  <li>
+    <span class="code-highlight">counters_history_serialized</span>: datos históricos de los contadores del jugador para renderizar el gráfico de progreso
+  </li>
+
+  <li>
+    <span class="code-highlight">badges_serialized</span>: datos sobre el tablero del juego: insignias obtenidas, sus estados, nivel, etc.
+  </li>
+
+  <li>
+    <span class="code-highlight">autopause_config_serialized</span>: configuración del programador de sueño. ⚠️Contiene la zona horaria del usuario (si se usa la función).
+  </li>
+
+  <li>
+    <span class="code-highlight">frontend_base_url_override</span>: URL del servidor web de la miniapp
+  </li>
+</ul>
+
 
 
     <h3>Cómo Usamos Tus Datos</h3>

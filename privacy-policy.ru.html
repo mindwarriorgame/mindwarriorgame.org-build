@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Политика конфиденциальности</title>
-    <link rel="stylesheet" href="/includes/layout.css?1765454131">
-    <link rel="stylesheet" href="/includes/popup.css?1765454131">
+    <link rel="stylesheet" href="/includes/layout.css?1765935120">
+    <link rel="stylesheet" href="/includes/popup.css?1765935120">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1765454131'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1765935120'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -72,45 +72,57 @@
         <li><span class="code-highlight">shared_key_uuid</span>: случайный набор символов, ассоциированный с пользователем.</li>
     </ul>
 
-    <h4>Game Data</h4>
-    <ul>
-        <li>
-            <span class="code-highlight">difficulty</span>: сложность игры, число
-        </li>
+    <h4>Игровые данные</h4>
+<ul>
+    <li>
+        <span class="code-highlight">difficulty</span>
+    </li>
 
+    <li>
+        <span class="code-highlight">diamonds</span>: текущее количество заработанных алмазов
+    </li>
+    <li>
+        <span class="code-highlight">diamonds_spent</span>: количество потраченных алмазов
+    </li>
+    <li>
+        <span class="code-highlight">has_repeller</span>: есть ли у пользователя отпугиватель сердитого кота, доступный для использования
+    </li>
 
-        <li>
-            <span class="code-highlight">review_counter_state</span>,
-            <span class="code-highlight">active_game_counter_state</span>,
-            <span class="code-highlight">paused_counter_state</span>: значения таймеров,
-            включающие дату/время, счетчики прошедшего времени и статус (включен/выключен)
-        </li>
+    <li>
+        <span class="code-highlight">review_counter_state</span>,
+        <span class="code-highlight">active_game_counter_state</span>,
+        <span class="code-highlight">paused_counter_state</span>: значения таймеров-секундомеров, которые
+        содержат временные метки, счётчики прошедшего времени и флаги состояния
+    </li>
 
-        <li>
-            <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: дата и время
-        </li>
-        <li>
-            <span class="code-highlight">next_prompt_type</span>: строка (может хранить только два значения: "reminder" или "penalty")
-        </li>
+    <li>
+        <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: временные метки
+    </li>
+    <li>
+        <span class="code-highlight">next_prompt_type</span>: строка (может содержать только 2 возможных значения: "reminder" и "penalty")
+    </li>
 
-        <li>
-            <span class="code-highlight">counters_history_serialized</span>: история изменений счетчиков игрока для отображения графика прогресса
-        </li>
+    <li>
+        <span class="code-highlight">last_reward_time_at_active_counter_time_secs</span>: таймер для отслеживания времени с момента выдачи последней награды
+    </li>
 
-        <li>
-            <span class="code-highlight">counters_history_serialized</span>: история изменений счетчиков игрока для отображения графика прогресса
-        </li>
+    <li>
+        <span class="code-highlight">counters_history_serialized</span>: исторические данные счётчиков игрока для отрисовки графика прогресса
+    </li>
 
-        <li>
-            <span class="code-highlight">badges_serialized</span>: игровая доска игрока: уровень, заработанные достижения, закрытые достижения, прогресс для следующего достижения и т. д.
-        </li>
+    <li>
+        <span class="code-highlight">badges_serialized</span>: данные об игровой доске: полученные значки, их статусы, уровень и т. д.
+    </li>
 
-        <li>
-            <span class="code-highlight">autopause_config_serialized</span>: настройки планировщика сна. ⚠️Содержит часовой пояс пользователя (если функция используется).
-        </li>
+    <li>
+        <span class="code-highlight">autopause_config_serialized</span>: настройки планировщика сна. ⚠️Содержит часовой пояс пользователя (если функция используется).
+    </li>
 
+    <li>
+        <span class="code-highlight">frontend_base_url_override</span>: URL веб-сервера мини-приложения
+    </li>
+</ul>
 
-    </ul>
 
     <h3>Как мы используем собранную информацию</h3>
     <p>Мы используем собранную информацию для того, чтобы:</p>

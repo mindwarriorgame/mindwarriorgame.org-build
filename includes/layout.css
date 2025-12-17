@@ -205,3 +205,51 @@ hr {
     border: none;
     border-top: 1px solid #000000;
 }
+
+/* ===== MindWarrior Disclaimer Banner ===== */
+.mw-disclaimer-banner{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:14px 16px;
+  margin:16px 0;
+  border:1px solid rgba(0,0,0,.12);
+  border-left:6px solid #b45309; /* warm warning tone */
+  border-radius:10px;
+  background:#fff7ed;           /* subtle warm background */
+  color:#111827;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.mw-disclaimer-banner__icon{
+  flex:0 0 auto;
+  width:28px;
+  height:28px;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  line-height:1;
+  background:#b45309;
+  color:#ffffff;
+  margin-top:1px;
+}
+
+.mw-disclaimer-banner__body{
+  min-width:0;
+}
+
+.mw-disclaimer-banner__title{
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  margin:0 0 6px 0;
+  color:#7c2d12;
+}
+
+.mw-disclaimer-banner__text{
+  font-size:14px;
+  line-height:1.45;
+  margin:0;
+}
