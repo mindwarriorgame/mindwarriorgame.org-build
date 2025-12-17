@@ -17,5 +17,9 @@ return array(
     'name' => 'Pourquoi "MindWarrior"?',
     'formula-example' => '"Formules" des autres',
     'share' => 'Partager la "Formule"',
-    'privacy' => 'Confidentialité'
+    'privacy' => 'Confidentialité',
+    'tos' => "Conditions d’utilisation",
+    'privacy-policy' => 'Politique de confidentialité',
+    'important' => 'Important',
+
 );

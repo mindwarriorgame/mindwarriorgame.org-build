@@ -39,10 +39,7 @@
             ?>
             <li class="<?=$class;?>"><a href="/public-formulas.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['public-formulas']; ?></a></li>
 
-            <?php
-            $class = $ACTIVE_MENU == 'privacy-policy' ? "active" : "";
-            ?>
-            <li class="<?=$class;?>"><a href="/privacy-policy.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['privacy-policy']; ?></a></li>
+            
         </ul>
         <h2><?=$MENU['faq']; ?></h2>
         <ul id="faq-questions">
@@ -53,6 +50,24 @@
                     echo "<li data-target='{$key}'><a href=\"/faq.{$LANG}.{$LINK_EXT}#{$key}\">{$MENU[$key]}</a></li>";
                 }
             ?>
+        </ul>
+
+        <h2><?=$MENU['important']; ?></h2>
+
+        <ul>
+            <?php
+            $class = $ACTIVE_MENU == 'tos' ? "active" : "";
+            ?>
+            <li class="<?=$class;?>">
+                <a href="/tos.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['tos']; ?></a>
+            </li>
+            
+            <?php
+            $class = $ACTIVE_MENU == 'privacy-policy' ? "active" : "";
+            ?>
+            <li class="<?=$class;?>">
+                <a href="/privacy-policy.<?=$LANG;?>.<?=getenv('LINK_EXT');?>"><?=$MENU['privacy-policy']; ?></a>
+            </li>
         </ul>
     </div>
 

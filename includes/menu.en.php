@@ -4,7 +4,6 @@ return array(
     'start' => 'Start playing',
     'quick-start' => 'Quick start guide',
     'public-formulas' => 'Public "Formulas"',
-    'privacy-policy' => 'Privacy policy',
     'faq' => 'FAQ',
     'purpose' => 'What\'s this about?',
     'formula' => '"Formula"',
@@ -17,5 +16,8 @@ return array(
     'name' => 'Why "MindWarrior"?',
     'formula-example' => '"Formulas" of others',
     'share' => 'Sharing "Formula"',
-    'privacy' => 'Privacy'
+    'privacy' => 'Privacy',
+    'tos' => 'Terms of service',
+    'privacy-policy' => 'Privacy policy',
+    'important' => 'Important',
 );
