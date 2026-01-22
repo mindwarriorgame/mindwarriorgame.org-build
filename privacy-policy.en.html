@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Privacy policy</title>
-    <link rel="stylesheet" href="/includes/layout.css?1766029013">
-    <link rel="stylesheet" href="/includes/popup.css?1766029013">
+    <link rel="stylesheet" href="/includes/layout.css?1769059270">
+    <link rel="stylesheet" href="/includes/popup.css?1769059270">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1766029013'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1769059270'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -43,20 +43,23 @@
         
     <h2>Privacy policy</h2>
 
-    <p style="padding-top:0;"><sub>Last updated: 2025-12-17</sub></p>
+    <p style="padding-top:0;"><sub>Last updated: 2026-01-21</sub></p>
 
 
     <h3>Introduction</h3>
     <p>
-  We take your privacy seriously. Your
-  <a href="/faq.en.html#formula">“Formula of firm resolution”</a>
-  stays on your device and is not sent to our servers. The game does not create extra copies or upload it anywhere —
-  it is stored locally in
-  <a href="https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e" target="_blank" rel="noopener noreferrer">localStorage</a>
-  inside Telegram’s
-  <a href="https://docs.ton.org/develop/dapps/telegram-apps/testing-apps#debug-mode-for-mini-apps" target="_blank" rel="noopener noreferrer">WebView</a>.
-</p>
+        This policy applies to both the MindWarrior Telegram bot and the MindWarrior Android app.
+        We take your privacy seriously and aim to collect as little data as possible.
+    </p>
 
+    <p>
+        Your <a href="/faq.en.html#formula">“Formula of firm resolution”</a>
+        stays on your device and is not sent to our servers. For the Telegram bot, it is stored locally in
+        <a href="https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e" target="_blank" rel="noopener noreferrer">localStorage</a>
+        inside Telegram’s
+        <a href="https://docs.ton.org/develop/dapps/telegram-apps/testing-apps#debug-mode-for-mini-apps" target="_blank" rel="noopener noreferrer">WebView</a>.
+        For the Android app, it is stored locally in the app's private storage on your device.
+    </p>
 
     <p>
         Because of this, we recommend you to regularly create manual backup copies of your Formula by copy-pasting its content
@@ -75,7 +78,8 @@
 
     <p>The game collects the following user data:</p>
 
-    <h4>User Information</h4>
+    <h4>Telegram bot</h4>
+    <h5>User Information</h5>
     <ul>
         <li><span class="code-highlight">user_id</span>: A unique Telegram identifier of the user
             (<a href="https://flows.network/blog/how-to-find-telegram-chat-id#:~:text=Telegram%20has%20three%20different%20kinds,is%20called%20group%20chat%20ID." target="_blank">chat_id</a>),
@@ -85,59 +89,70 @@
         <li><span class="code-highlight">shared_key_uuid</span>: a random string associated with the user.</li>
     </ul>
 
-    <h4>Game Data</h4>
-<ul>
-    <li>
-        <span class="code-highlight">difficulty</span>
-    </li>
+    <h5>Game Data</h5>
+    <ul>
+        <li>
+            <span class="code-highlight">difficulty</span>
+        </li>
 
-    <li>
-        <span class="code-highlight">diamonds</span>: current amount of earned diamonds
-    </li>
-    <li>
-        <span class="code-highlight">diamonds_spent</span>: the amount of spent diamonds
-    </li>
-    <li>
-        <span class="code-highlight">has_repeller</span>: if the user has a grumpy cat repeller available to be used
-    </li>
+        <li>
+            <span class="code-highlight">diamonds</span>: current amount of earned diamonds
+        </li>
+        <li>
+            <span class="code-highlight">diamonds_spent</span>: the amount of spent diamonds
+        </li>
+        <li>
+            <span class="code-highlight">has_repeller</span>: if the user has a grumpy cat repeller available to be used
+        </li>
 
-    <li>
-        <span class="code-highlight">review_counter_state</span>,
-        <span class="code-highlight">active_game_counter_state</span>,
-        <span class="code-highlight">paused_counter_state</span>: stopwatch timer values that
-        contain timestamps, elapsed time counters and status flags
-    </li>
+        <li>
+            <span class="code-highlight">review_counter_state</span>,
+            <span class="code-highlight">active_game_counter_state</span>,
+            <span class="code-highlight">paused_counter_state</span>: stopwatch timer values that
+            contain timestamps, elapsed time counters and status flags
+        </li>
 
-    <li>
-        <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: timestamps
-    </li>
-    <li>
-        <span class="code-highlight">next_prompt_type</span>: string (could contain only 2 possible values: "reminder" and "penalty")
-    </li>
+        <li>
+            <span class="code-highlight">next_prompt_time</span>, <span class="code-highlight">next_autopause_event_time</span>: timestamps
+        </li>
+        <li>
+            <span class="code-highlight">next_prompt_type</span>: string (could contain only 2 possible values: "reminder" and "penalty")
+        </li>
 
-    <li>
-        <span class="code-highlight">last_reward_time_at_active_counter_time_secs</span>: a timer to track the time since the last reward was administered
-    </li>
+        <li>
+            <span class="code-highlight">last_reward_time_at_active_counter_time_secs</span>: a timer to track the time since the last reward was administered
+        </li>
 
-    <li>
-        <span class="code-highlight">counters_history_serialized</span>: historical data of player's counters for rendering the progress chart
-    </li>
+        <li>
+            <span class="code-highlight">counters_history_serialized</span>: historical data of player's counters for rendering the progress chart
+        </li>
 
-    <li>
-        <span class="code-highlight">badges_serialized</span>: the data about the game board: earned badges, their statuses, level etc.
-    </li>
+        <li>
+            <span class="code-highlight">badges_serialized</span>: the data about the game board: earned badges, their statuses, level etc.
+        </li>
 
-    <li>
-        <span class="code-highlight">autopause_config_serialized</span>: settings of the sleep scheduler. ⚠️Contains user's timezone (if the feature is used).
-    </li>
+        <li>
+            <span class="code-highlight">autopause_config_serialized</span>: settings of the sleep scheduler. ⚠️Contains user's timezone (if the feature is used).
+        </li>
 
-    <li>
-        <span class="code-highlight">frontend_base_url_override</span>: URL of miniapp web server
-    </li>
-</ul>
+        <li>
+            <span class="code-highlight">frontend_base_url_override</span>: URL of miniapp web server
+        </li>
+    </ul>
+
+    <h4>Android app</h4>
+    <p>
+        The Android app does not require an account and does not collect or transmit personal data to our servers
+        during normal use. All game progress and settings are stored locally on your device.
+    </p>
+    <ul>
+        <li>Local game progress (e.g., timers, counters, badges, difficulty)</li>
+        <li>Local app settings (e.g., language and scheduler configuration)</li>
+    </ul>
 
 
     <h3>How We Use Your Data</h3>
+    <h4>Telegram bot</h4>
     <p>We use the collected data to:</p>
     <ul>
         <li>provide, operate, and maintain the game experience</li>
@@ -145,13 +160,28 @@
         <li>develop new features and functionality of the game</li>
     </ul>
 
+    <h4>Android app</h4>
+    <p>We use the local data only to:</p>
+    <ul>
+        <li>provide and maintain the on-device game experience</li>
+        <li>restore progress within the app on your device</li>
+    </ul>
+
     <h3>Data Storage</h3>
+    <h4>Telegram bot</h4>
     <p>We store your data securely and take appropriate measures to protect it from unauthorized access,
         disclosure, alteration, or destruction.</p>
 
     <p><strong>Hosting:</strong> We use third-party hosting providers, and your data may be stored or processed in different countries/jurisdictions. We take reasonable steps to protect it, but cannot guarantee absolute security.</p>
 
+    <h4>Android app</h4>
+    <p>
+        The Android app stores data locally in the app's private storage on your device. You can remove this data
+        by clearing the app's storage or uninstalling the app.
+    </p>
+
     <h3>Your Rights</h3>
+    <h4>Telegram bot</h4>
     <p>You have the following controls regarding your data:</p>
     <ul>
         <li><strong>Access</strong>: You can access all you data anytime by using
@@ -172,6 +202,9 @@
         </li>
     </ul>
 
+    <h4>Android app</h4>
+    <p>You can delete all app data at any time by clearing the app's storage or uninstalling the app.</p>
+
     <h3>Using Telegram</h3>
 
     <p>
@@ -179,6 +212,14 @@
         <a href="https://telegram.org/privacy" target="_blank">privacy policy</a> to understand how it will treat your
         data. We are not responsible for the privacy practices of Telegram and don't have any visibility or control
         over them. Please make sure that you are comfortable with that before using the game.
+    </p>
+
+    <h3>Using Google Play</h3>
+    <p>
+        The Android app is distributed via Google Play. Google may collect data associated with installation and
+        updates according to its own
+        <a href="https://policies.google.com/privacy" target="_blank">privacy policy</a>.
+        We do not receive personal data from Google Play.
     </p>
 
     <h3>Changes to This Policy</h3>

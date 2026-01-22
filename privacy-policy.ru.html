@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindWarrior: Политика конфиденциальности</title>
-    <link rel="stylesheet" href="/includes/layout.css?1766029013">
-    <link rel="stylesheet" href="/includes/popup.css?1766029013">
+    <link rel="stylesheet" href="/includes/layout.css?1769059270">
+    <link rel="stylesheet" href="/includes/popup.css?1769059270">
 
-    <link rel='stylesheet' href='includes/quick-start.css?1766029013'></head>
+    <link rel='stylesheet' href='includes/quick-start.css?1769059270'></head>
 <body>
 <button class="menu-btn">☰</button>
 
@@ -43,20 +43,23 @@
         
     <h2>Политика конфиденциальности</h2>
 
-    <p style="padding-top:0;"><sub>Последнее обновление: 2025-12-17</sub></p>
+    <p style="padding-top:0;"><sub>Последнее обновление: 2026-01-21</sub></p>
 
 
     <h3>Введение</h3>
     <p>
-  Мы серьёзно относимся к вашей конфиденциальности. Ваша
-  <a href="/faq.ru.html#formula">«Формула твёрдого решения»</a>
-  остаётся на вашем устройстве и не отправляется на наши серверы. Игра не создаёт дополнительных копий и никуда её не загружает —
-  она хранится локально в
-  <a href="https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e" target="_blank" rel="noopener noreferrer">localStorage</a>
-  внутри
-  <a href="https://docs.ton.org/develop/dapps/telegram-apps/testing-apps#debug-mode-for-mini-apps" target="_blank" rel="noopener noreferrer">WebView</a>
-  Telegram.
-</p>
+        Эта политика применяется как к Telegram-боту MindWarrior, так и к Android-приложению MindWarrior.
+        Мы серьёзно относимся к конфиденциальности и стремимся собирать минимум данных.
+    </p>
+
+    <p>
+        Ваша <a href="/faq.ru.html#formula">«Формула твёрдого решения»</a>
+        остаётся на вашем устройстве и не отправляется на наши серверы. Для Telegram-бота она хранится локально в
+        <a href="https://davitdvalashvili1996.medium.com/local-storage-in-javascript-f7aad374980e" target="_blank" rel="noopener noreferrer">localStorage</a>
+        внутри
+        <a href="https://docs.ton.org/develop/dapps/telegram-apps/testing-apps#debug-mode-for-mini-apps" target="_blank" rel="noopener noreferrer">WebView</a>
+        Telegram. Для Android-приложения она хранится локально в приватном хранилище приложения на вашем устройстве.
+    </p>
 
 
     <p>
@@ -76,7 +79,8 @@
 
     <p>Игра собирает следующие данные пользователя:</p>
 
-    <h4>Информация о пользователе</h4>
+    <h4>Telegram-бот</h4>
+    <h5>Информация о пользователе</h5>
     <ul>
         <li><span class="code-highlight">user_id</span>: уникальный идентификатор пользователя в Telegram
             (<a href="https://flows.network/blog/how-to-find-telegram-chat-id#:~:text=Telegram%20has%20three%20different%20kinds,is%20called%20group%20chat%20ID." target="_blank">chat_id</a>),
@@ -86,7 +90,7 @@
         <li><span class="code-highlight">shared_key_uuid</span>: случайная строка, связанная с пользователем.</li>
     </ul>
 
-    <h4>Игровые данные</h4>
+    <h5>Игровые данные</h5>
 <ul>
     <li>
         <span class="code-highlight">difficulty</span>
@@ -137,8 +141,19 @@
     </li>
 </ul>
 
+    <h4>Android-приложение</h4>
+    <p>
+        Android-приложение не требует учетной записи и не собирает и не передает персональные данные на наши серверы
+        при обычном использовании. Весь прогресс и настройки игры сохраняются локально на вашем устройстве.
+    </p>
+    <ul>
+        <li>Локальный прогресс игры (например, таймеры, счетчики, значки, сложность)</li>
+        <li>Локальные настройки приложения (например, язык и настройки планировщика)</li>
+    </ul>
+
 
     <h3>Как мы используем ваши данные</h3>
+    <h4>Telegram-бот</h4>
     <p>Мы используем собранные данные, чтобы:</p>
     <ul>
         <li>предоставлять, запускать и поддерживать игровой процесс</li>
@@ -146,13 +161,28 @@
         <li>разрабатывать новые функции и возможности игры</li>
     </ul>
 
+    <h4>Android-приложение</h4>
+    <p>Мы используем локальные данные только для:</p>
+    <ul>
+        <li>предоставления и поддержания игрового процесса на устройстве</li>
+        <li>восстановления прогресса в приложении на вашем устройстве</li>
+    </ul>
+
     <h3>Хранение данных</h3>
+    <h4>Telegram-бот</h4>
     <p>Мы храним ваши данные в защищённом виде и принимаем соответствующие меры для защиты от несанкционированного доступа,
         раскрытия, изменения или уничтожения.</p>
 
     <p><strong>Хостинг:</strong> мы используем сторонних хостинг-провайдеров, и ваши данные могут храниться или обрабатываться в разных странах/юрисдикциях. Мы предпринимаем разумные меры защиты, но не можем гарантировать абсолютную безопасность.</p>
 
+    <h4>Android-приложение</h4>
+    <p>
+        Android-приложение хранит данные локально в приватном хранилище приложения на вашем устройстве. Вы можете удалить эти данные,
+        очистив хранилище приложения или удалив приложение.
+    </p>
+
     <h3>Ваши права</h3>
+    <h4>Telegram-бот</h4>
     <p>У вас есть следующие возможности управления вашими данными:</p>
     <ul>
         <li><strong>Доступ</strong>: вы можете получить доступ ко всем вашим данным в любое время с помощью команды
@@ -173,6 +203,9 @@
         </li>
     </ul>
 
+    <h4>Android-приложение</h4>
+    <p>Вы можете удалить все данные приложения в любое время, очистив хранилище приложения или удалив приложение.</p>
+
     <h3>Использование Telegram</h3>
 
     <p>
@@ -180,6 +213,14 @@
         <a href="https://telegram.org/privacy" target="_blank">политикой конфиденциальности</a> Telegram, чтобы понять, как он будет обрабатывать ваши
         данные. Мы не несём ответственности за практики конфиденциальности Telegram и не имеем ни видимости, ни контроля
         над ними. Пожалуйста, убедитесь, что вас это устраивает, прежде чем пользоваться игрой.
+    </p>
+
+    <h3>Использование Google Play</h3>
+    <p>
+        Android-приложение распространяется через Google Play. Google может собирать данные, связанные с установкой и
+        обновлениями, в соответствии со своей
+        <a href="https://policies.google.com/privacy" target="_blank">политикой конфиденциальности</a>.
+        Мы не получаем персональные данные от Google Play.
     </p>
 
     <h3>Изменения в этой политике</h3>
