@@ -1,7 +1,8 @@
 <?php
 
 return array(
-    'start' => 'Начать играть',
+    'start' => 'Играть в Telegram',
+    'start-android' => 'Играть на Android',
     'quick-start' => 'Краткое руководство',
     'public-formulas' => 'Примеры Формул',
     'privacy-policy' => 'Политика конфиденциальности',

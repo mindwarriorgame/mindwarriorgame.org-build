@@ -123,6 +123,35 @@ h2, h3, h4 {
     background-color: #595959 ;
 }
 
+.sidebar li.store-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+}
+
+.sidebar li.store-links:hover {
+    background-color: transparent;
+}
+
+.sidebar li.store-links a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sidebar li.store-links .store-icon {
+    display: block;
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.sidebar li.store-links .play-badge {
+    height: 56px;
+    transform: translateY(4px);
+}
+
 .sidebar a {
     color: #fff;
     text-decoration: none;

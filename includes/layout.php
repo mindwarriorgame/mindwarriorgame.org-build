@@ -28,7 +28,14 @@
     <div class="sidebar" id="sidebar">
         <div id="logo"><img src="/images/layout/ai-generated-8707933_1280-modified-small.png" alt="MindWarrior" title="MindWarrior" /></div>
         <ul>
-            <li><img src="/images/telegram.svg" width="32" style="vertical-align: middle" /> <a href="https://t.me/MindWarriorGame_bot" target="_blank"><?=$MENU['start']; ?></a></li>
+            <li class="store-links">
+                <a href="https://t.me/MindWarriorGame_bot" target="_blank" aria-label="Play on Telegram">
+                    <img class="store-icon telegram-icon" src="/images/telegram.svg" alt="Telegram" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.mindwarrior.app" target="_blank" aria-label="Play on Android">
+                    <img class="store-icon play-badge" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Google Play" />
+                </a>
+            </li>
             <?php
                 $class = $ACTIVE_MENU == 'quick-start' ? "active" : "";
             ?>

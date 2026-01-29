@@ -1,7 +1,8 @@
 <?php
 
 return array(
-    'start' => 'Start playing',
+    'start' => 'Play on Telegram',
+    'start-android' => 'Play on Android',
     'quick-start' => 'Quick start guide',
     'public-formulas' => 'Public "Formulas"',
     'faq' => 'FAQ',
