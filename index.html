@@ -38,7 +38,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        .container a {
+        .container .lang-link {
             display: block;
             margin: 10px 0;
             padding: 10px;
@@ -50,13 +50,63 @@
             transition: background-color 0.3s ease;
         }
 
-        .container a:hover {
+        .container .lang-link:hover {
             background-color: #ddd;
         }
 
         @media (max-width: 600px) {
-            .container a {
+            .container .lang-link {
                 font-size: 1.2rem;
+            }
+        }
+
+        .app-buttons {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .store-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 8px 12px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .store-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 22px rgba(0, 0, 0, 0.24);
+        }
+
+        .store-badge img {
+            display: block;
+            height: 40px;
+        }
+
+        .store-badge .badge-text {
+            display: inline-block;
+            color: #111;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            white-space: nowrap;
+        }
+
+        .store-badge.telegram img {
+            height: 36px;
+        }
+
+        @media (max-width: 600px) {
+            .app-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
         span {
@@ -66,11 +116,21 @@
 </head>
 <body>
 <div class="container">
-    <a href="quick-start.en.html#purpose">🇬🇧 English</a>
-    <a href="quick-start.de.html#purpose">🇩🇪 Deutsch</a>
-    <a href="quick-start.es.html#purpose">🇪🇸 Español</a>
-    <a href="quick-start.fr.html#purpose">🇫🇷 Français</a>
-    <a href="quick-start.ru.html#purpose">🇷🇺 Русский</a>
+    <a class="lang-link" href="quick-start.en.html#purpose">🇬🇧 English</a>
+    <a class="lang-link" href="quick-start.de.html#purpose">🇩🇪 Deutsch</a>
+    <a class="lang-link" href="quick-start.es.html#purpose">🇪🇸 Español</a>
+    <a class="lang-link" href="quick-start.fr.html#purpose">🇫🇷 Français</a>
+    <a class="lang-link" href="quick-start.ru.html#purpose">🇷🇺 Русский</a>
+    <div class="app-buttons">
+        <a class="store-badge telegram" href="https://t.me/MindWarriorGame_bot" aria-label="Play in Telegram">
+            <img src="https://telegram.org/img/t_logo.svg" alt="Telegram">
+            <span class="badge-text">Play in Telegram</span>
+        </a>
+        <a class="store-badge play-store" href="https://play.google.com/store/apps/details?id=com.mindwarrior.app" aria-label="Play on Android">
+            <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play">
+            <span class="badge-text">Play on Android</span>
+        </a>
+    </div>
 </div>
 
 
