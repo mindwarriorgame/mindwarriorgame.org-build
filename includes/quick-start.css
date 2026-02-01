@@ -8,6 +8,39 @@
     color: white;
 }
 
+.platform-tabs {
+    display: inline-flex;
+    gap: 10px;
+    margin: 10px auto 16px auto;
+    padding: 6px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.platform-tab {
+    border: 0;
+    background: transparent;
+    color: #444;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.platform-tab.active {
+    background: #ffffff;
+    color: #111;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.platform-content {
+    display: none;
+}
+
+.platform-content.active {
+    display: block;
+}
+
 .quickstart-step {
     background-image: url('/images/quickstart-item-bg.png');
     background-size:100% 100%;
